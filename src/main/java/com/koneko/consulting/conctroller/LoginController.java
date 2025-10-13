@@ -1,6 +1,8 @@
 package com.koneko.consulting.conctroller;
 
 import java.io.IOException;
+import java.util.Locale;
+import java.util.ResourceBundle;
 
 import javax.imageio.ImageIO;
 
@@ -10,7 +12,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.koneko.consulting.common.VCodeGenerator;
 import com.koneko.consulting.pojo.User;
@@ -23,9 +24,11 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @RequestMapping("/")
 public class LoginController {
+    private ResourceBundle rb;
 
     @GetMapping
-    public String hello(Model model) {
+    public String hello(Model model, Locale locale) {
+        rb = ResourceBundle.getBundle("i18n/i18n", locale);
         User user = new User();
         // user.setUserName("laoyang");
         // user.setPassword("123456");
@@ -49,10 +52,15 @@ public class LoginController {
         ImageIO.write(bufferedImage, "gif", response.getOutputStream());
     }
 
-    @PostMapping("ok")
-    @ResponseBody
-    public String OK(@ModelAttribute User user) {
+    @PostMapping("checkLogin")
+    public String checkLogin(@ModelAttribute User user, Model model, HttpServletRequest request) {
         log.info("用户信息：{}", user);
-        return user.toString();
+        String vcode = (String) request.getSession().getAttribute("vcode");
+        if (vcode.equalsIgnoreCase(user.getLoginCode())) {
+            return "main";
+        } else {
+            model.addAttribute("msg", rb.getString("login.msg.error"));
+            return "login";
+        }
     }
 }
