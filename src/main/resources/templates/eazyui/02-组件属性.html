@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="stylesheet" type="text/css" href="./easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="./easyui/themes/icon.css">
+    <script type="text/javascript" src="./easyui/jquery.min.js"></script>
+    <script type="text/javascript" src="./easyui/jquery.easyui.min.js"></script>
+    <style>
+      body{
+        font-family: 'yahei';
+      }
+      .yahei{
+        font-family: 'yahei';
+        font-size: 10px;
+        color:red;
+      }
+    </style>
+</head>
+<body>
+  大幅度撒肥
+    <input id="textbox" >
+    <script>
+      $('#textbox').textbox({
+        width:300,
+        iconCls:'icon-lock',
+        prompt:'请输入用户名'
+      });
+    </script>
+</body>
+</html>

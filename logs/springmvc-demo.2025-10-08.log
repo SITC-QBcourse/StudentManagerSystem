@@ -1,0 +1,272 @@
+2025-10-08 11:44:32.843 [main] INFO  c.k.c.StudentManagerSystemApplication - Starting StudentManagerSystemApplication using Java 17.0.13 with PID 5244 (P:\StudentManagerSystem\target\classes started by SITC-050 in P:\StudentManagerSystem)
+2025-10-08 11:44:32.851 [main] INFO  c.k.c.StudentManagerSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-08 11:44:33.921 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-08 11:44:33.938 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-08 11:44:33.940 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-08 11:44:33.941 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-08 11:44:34.146 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-10-08 11:44:34.154 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-08 11:44:34.155 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1255 ms
+2025-10-08 11:44:34.348 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+2025-10-08 11:44:34.416 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-10-08 11:44:34.434 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-08 11:44:34.491 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-08 11:44:34.565 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-08 11:44:34.597 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-08 11:44:34.605 [main] INFO  c.k.c.StudentManagerSystemApplication - Started StudentManagerSystemApplication in 2.249 seconds (process running for 3.194)
+2025-10-08 11:44:59.926 [main] INFO  c.k.c.StudentManagerSystemApplication - Starting StudentManagerSystemApplication using Java 17.0.13 with PID 10736 (P:\StudentManagerSystem\target\classes started by SITC-050 in P:\StudentManagerSystem)
+2025-10-08 11:44:59.929 [main] INFO  c.k.c.StudentManagerSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-08 11:45:01.110 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-08 11:45:01.124 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-08 11:45:01.127 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-08 11:45:01.127 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-08 11:45:01.350 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-10-08 11:45:01.363 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-08 11:45:01.364 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1372 ms
+2025-10-08 11:45:01.535 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+2025-10-08 11:45:01.599 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-10-08 11:45:01.618 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-08 11:45:01.665 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-08 11:45:01.709 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-08 11:45:01.718 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-10-08 11:45:01.734 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-08 11:45:01.756 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-10-08 11:45:18.782 [main] INFO  c.k.c.StudentManagerSystemApplication - Starting StudentManagerSystemApplication using Java 17.0.13 with PID 23112 (P:\StudentManagerSystem\target\classes started by SITC-050 in P:\StudentManagerSystem)
+2025-10-08 11:45:18.784 [main] INFO  c.k.c.StudentManagerSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-08 11:45:19.937 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-08 11:45:19.957 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-08 11:45:19.960 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-08 11:45:19.960 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-08 11:45:20.183 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-10-08 11:45:20.193 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-08 11:45:20.193 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1358 ms
+2025-10-08 11:45:20.389 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+2025-10-08 11:45:20.461 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-10-08 11:45:20.481 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-08 11:45:20.526 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-08 11:45:20.565 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-08 11:45:20.573 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-10-08 11:45:20.586 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-08 11:45:20.607 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-10-08 11:46:07.241 [RMI TCP Connection(5)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-10-08 11:46:07.245 [RMI TCP Connection(5)-127.0.0.1] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-08 11:46:07.246 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-10-08 11:46:07.332 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-08 11:46:07.333 [RMI TCP Connection(5)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-10-08 11:52:05.810 [main] INFO  c.k.c.StudentManagerSystemApplication - Starting StudentManagerSystemApplication using Java 17.0.13 with PID 28124 (P:\StudentManagerSystem\target\classes started by SITC-050 in P:\StudentManagerSystem)
+2025-10-08 11:52:05.820 [main] INFO  c.k.c.StudentManagerSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-08 11:52:06.801 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-08 11:52:06.822 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-08 11:52:06.826 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-08 11:52:06.826 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-08 11:52:07.055 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-10-08 11:52:07.063 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-08 11:52:07.064 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1194 ms
+2025-10-08 11:52:07.261 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+2025-10-08 11:52:07.337 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-10-08 11:52:07.357 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-08 11:52:07.411 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-08 11:52:07.457 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-08 11:52:07.494 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-08 11:52:07.502 [main] INFO  c.k.c.StudentManagerSystemApplication - Started StudentManagerSystemApplication in 2.143 seconds (process running for 2.715)
+2025-10-08 11:52:29.987 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-08 11:52:29.988 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-08 11:52:29.988 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-10-08 11:52:29.989 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-10-08 11:52:29.989 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-10-08 11:52:29.991 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6e98c4ea
+2025-10-08 11:52:29.991 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@323a518a
+2025-10-08 11:52:29.992 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-10-08 11:52:29.992 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2025-10-08 11:52:30.004 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+2025-10-08 11:52:30.021 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.koneko.consulting.conctroller.HelloConstroller#hello()
+2025-10-08 11:52:30.040 [http-nio-8080-exec-1] INFO  c.k.c.conctroller.HelloConstroller - 进入后台
+2025-10-08 11:52:30.052 [http-nio-8080-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-10-08 11:52:30.053 [http-nio-8080-exec-1] DEBUG o.s.w.s.view.InternalResourceView - View name [login], model {}
+2025-10-08 11:52:30.059 [http-nio-8080-exec-1] DEBUG o.s.w.s.view.InternalResourceView - Forwarding to [/WEB-INF/views/login.jsp]
+2025-10-08 11:52:31.057 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-08 11:52:31.287 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/easyui/themes/material-blue/easyui.css", parameters={}
+2025-10-08 11:52:31.312 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/easyui/css/demo.css", parameters={}
+2025-10-08 11:52:31.312 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/easyui/jquery.min.js", parameters={}
+2025-10-08 11:52:31.312 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/easyui/jquery.easyui.min.js", parameters={}
+2025-10-08 11:52:31.312 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/easyui/themes/locale/easyui-lang-zh_CN.js", parameters={}
+2025-10-08 11:52:31.304 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/easyui/themes/icon.css", parameters={}
+2025-10-08 11:52:31.320 [http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-08 11:52:31.321 [http-nio-8080-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-08 11:52:31.320 [http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-08 11:52:31.329 [http-nio-8080-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-08 11:52:31.332 [http-nio-8080-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-08 11:52:31.332 [http-nio-8080-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-08 11:52:31.334 [http-nio-8080-exec-4] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-10-08 11:52:31.350 [http-nio-8080-exec-7] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-10-08 11:52:31.369 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource easyui/css/demo.css.]
+2025-10-08 11:52:31.369 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource easyui/themes/locale/easyui-lang-zh_CN.js.]
+2025-10-08 11:52:31.371 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-10-08 11:52:31.371 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-10-08 11:52:31.373 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-10-08 11:52:31.373 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-10-08 11:52:31.377 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-08 11:52:31.379 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-08 11:52:31.428 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-08 11:52:31.498 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-08 11:52:31.534 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.1', given [text/css, */*;q=0.1] and supported [application/json, application/*+json]
+2025-10-08 11:52:31.534 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-08 11:52:31.539 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Wed Oct 08 11:52:31 JST 2025, status=404, error=Not Found, path=/easyui/css/demo.css}]
+2025-10-08 11:52:31.539 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Wed Oct 08 11:52:31 JST 2025, status=404, error=Not Found, path=/easyui/themes/locale/eas (truncated)...]
+2025-10-08 11:52:31.585 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-08 11:52:31.664 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-10-08 11:52:31.664 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-10-08 11:52:31.666 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-08 11:52:31.734 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/easyui/themes/material-blue/images/blank.gif", parameters={}
+2025-10-08 11:52:31.734 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/easyui/themes/material-blue/images/panel_tools.png", parameters={}
+2025-10-08 11:52:31.734 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/easyui/themes/material-blue/images/layout_arrows.png", parameters={}
+2025-10-08 11:52:31.735 [http-nio-8080-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-08 11:52:31.735 [http-nio-8080-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-08 11:52:31.735 [http-nio-8080-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-08 11:52:31.773 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-08 11:52:31.773 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-08 11:52:31.776 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-08 11:52:32.991 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/favicon.ico", parameters={}
+2025-10-08 11:52:32.994 [http-nio-8080-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-08 11:52:32.999 [http-nio-8080-exec-1] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-10-08 11:52:33.000 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-10-08 11:52:33.000 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-10-08 11:52:33.000 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-10-08 11:52:33.002 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-08 11:52:33.003 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2025-10-08 11:52:33.003 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Wed Oct 08 11:52:33 JST 2025, status=404, error=Not Found, path=/favicon.ico}]
+2025-10-08 11:52:33.007 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-10-08 11:59:20.057 [main] INFO  c.k.c.StudentManagerSystemApplication - Starting StudentManagerSystemApplication using Java 17.0.13 with PID 15468 (P:\StudentManagerSystem\target\classes started by SITC-050 in P:\StudentManagerSystem)
+2025-10-08 11:59:20.061 [main] INFO  c.k.c.StudentManagerSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-08 11:59:21.343 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-08 11:59:21.364 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-08 11:59:21.366 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-08 11:59:21.367 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-08 11:59:21.611 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-10-08 11:59:21.621 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-08 11:59:21.622 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1488 ms
+2025-10-08 11:59:21.863 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+2025-10-08 11:59:21.937 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-10-08 11:59:21.960 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-08 11:59:22.022 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-08 11:59:22.073 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-08 11:59:22.115 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-08 11:59:22.124 [main] INFO  c.k.c.StudentManagerSystemApplication - Started StudentManagerSystemApplication in 2.567 seconds (process running for 3.068)
+2025-10-08 11:59:25.881 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-08 11:59:25.882 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-08 11:59:25.882 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-10-08 11:59:25.882 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-10-08 11:59:25.883 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-10-08 11:59:25.884 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6c86c7fc
+2025-10-08 11:59:25.884 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@3db7f158
+2025-10-08 11:59:25.885 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-10-08 11:59:25.885 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-10-08 11:59:25.900 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+2025-10-08 11:59:25.920 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.koneko.consulting.conctroller.HelloConstroller#hello()
+2025-10-08 11:59:25.947 [http-nio-8080-exec-1] INFO  c.k.c.conctroller.HelloConstroller - 进入后台
+2025-10-08 11:59:25.958 [http-nio-8080-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-10-08 11:59:25.959 [http-nio-8080-exec-1] DEBUG o.s.w.s.view.InternalResourceView - View name [login], model {}
+2025-10-08 11:59:25.963 [http-nio-8080-exec-1] DEBUG o.s.w.s.view.InternalResourceView - Forwarding to [/WEB-INF/views/login.jsp]
+2025-10-08 11:59:27.031 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-08 11:59:27.184 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/easyui/css/demo.css", parameters={}
+2025-10-08 11:59:27.193 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/easyui/themes/locale/easyui-lang-zh_CN.js", parameters={}
+2025-10-08 11:59:27.194 [http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-08 11:59:27.197 [http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-08 11:59:27.212 [http-nio-8080-exec-4] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-10-08 11:59:27.214 [http-nio-8080-exec-3] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-10-08 11:59:27.227 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource easyui/css/demo.css.]
+2025-10-08 11:59:27.227 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource easyui/themes/locale/easyui-lang-zh_CN.js.]
+2025-10-08 11:59:27.228 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-10-08 11:59:27.228 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-10-08 11:59:27.229 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-10-08 11:59:27.229 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-10-08 11:59:27.231 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-08 11:59:27.231 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-08 11:59:27.297 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-08 11:59:27.297 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.1', given [text/css, */*;q=0.1] and supported [application/json, application/*+json]
+2025-10-08 11:59:27.303 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Wed Oct 08 11:59:27 JST 2025, status=404, error=Not Found, path=/easyui/css/demo.css}]
+2025-10-08 11:59:27.304 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Wed Oct 08 11:59:27 JST 2025, status=404, error=Not Found, path=/easyui/themes/locale/eas (truncated)...]
+2025-10-08 11:59:27.462 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-10-08 11:59:27.463 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-10-08 12:00:09.901 [main] INFO  c.k.c.StudentManagerSystemApplication - Starting StudentManagerSystemApplication using Java 17.0.13 with PID 7672 (P:\StudentManagerSystem\target\classes started by SITC-050 in P:\StudentManagerSystem)
+2025-10-08 12:00:09.908 [main] INFO  c.k.c.StudentManagerSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-08 12:00:12.028 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-08 12:00:12.051 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-08 12:00:12.054 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-08 12:00:12.055 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-08 12:00:12.335 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-10-08 12:00:12.348 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-08 12:00:12.349 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2300 ms
+2025-10-08 12:00:12.609 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+2025-10-08 12:00:12.693 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-10-08 12:00:12.718 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-08 12:00:12.784 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-08 12:00:12.830 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-08 12:00:12.867 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-08 12:00:12.877 [main] INFO  c.k.c.StudentManagerSystemApplication - Started StudentManagerSystemApplication in 4.015 seconds (process running for 4.855)
+2025-10-08 12:00:12.965 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-08 12:00:12.965 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-08 12:00:12.965 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-10-08 12:00:12.965 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-10-08 12:00:12.965 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-10-08 12:00:12.967 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6c86c7fc
+2025-10-08 12:00:12.967 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@3db7f158
+2025-10-08 12:00:12.967 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-10-08 12:00:12.968 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-10-08 12:00:12.980 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+2025-10-08 12:00:12.994 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.koneko.consulting.conctroller.HelloConstroller#hello()
+2025-10-08 12:00:13.009 [http-nio-8080-exec-1] INFO  c.k.c.conctroller.HelloConstroller - 进入后台
+2025-10-08 12:00:13.017 [http-nio-8080-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-10-08 12:00:13.018 [http-nio-8080-exec-1] DEBUG o.s.w.s.view.InternalResourceView - View name [login], model {}
+2025-10-08 12:00:13.022 [http-nio-8080-exec-1] DEBUG o.s.w.s.view.InternalResourceView - Forwarding to [/WEB-INF/views/login.jsp]
+2025-10-08 12:00:13.928 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-08 12:00:14.002 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/easyui/css/demo.css", parameters={}
+2025-10-08 12:00:14.006 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/easyui/themes/locale/easyui-lang-zh_CN.js", parameters={}
+2025-10-08 12:00:14.011 [http-nio-8080-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-08 12:00:14.011 [http-nio-8080-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-08 12:00:14.018 [http-nio-8080-exec-4] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-10-08 12:00:14.018 [http-nio-8080-exec-3] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-10-08 12:00:14.027 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource easyui/themes/locale/easyui-lang-zh_CN.js.]
+2025-10-08 12:00:14.027 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource easyui/css/demo.css.]
+2025-10-08 12:00:14.028 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-10-08 12:00:14.028 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-10-08 12:00:14.029 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-10-08 12:00:14.029 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-10-08 12:00:14.030 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-08 12:00:14.030 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-08 12:00:14.065 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.1', given [text/css, */*;q=0.1] and supported [application/json, application/*+json]
+2025-10-08 12:00:14.065 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-08 12:00:14.069 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Wed Oct 08 12:00:14 JST 2025, status=404, error=Not Found, path=/easyui/themes/locale/eas (truncated)...]
+2025-10-08 12:00:14.070 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Wed Oct 08 12:00:14 JST 2025, status=404, error=Not Found, path=/easyui/css/demo.css}]
+2025-10-08 12:00:14.186 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-10-08 12:00:14.187 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404

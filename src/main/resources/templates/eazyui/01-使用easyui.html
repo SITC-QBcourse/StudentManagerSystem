@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./easyui/themes/bootstrap/easyui.css">
+    <link rel="stylesheet" type="text/css" href="./easyui/themes/icon.css">
+    <script type="text/javascript" src="./easyui/jquery.min.js"></script>
+    <script type="text/javascript" src="./easyui/jquery.easyui.min.js"></script>
+</head>
+<body>
+    <!-- 第一种方式：通过easyui-的方式的class添加组件 -->
+    <input class="easyui-textbox" style="width:300px"/><br>
+    <!-- 第二种方式，通过jQuery选中元素，添加组建名以及属性，属性可以参考说明文档 -->
+    <input id="pwd">
+    <script>
+        // 基本结构是$('选择器').组建名({属性：值，属性：值})
+        $('#pwd').passwordbox({
+            width:300,
+            prompt:'请输入密码'
+        });
+    </script>
+</body>
+</html>
