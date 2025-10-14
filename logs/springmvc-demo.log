@@ -871,3 +871,129 @@ java.sql.SQLSyntaxErrorException: Table 'student_manager_system.users' doesn't e
 2025-10-14 22:25:38.611 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 500
 2025-10-14 22:26:08.255 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2025-10-14 22:26:08.285 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-10-14 22:26:17.736 [main] INFO  c.k.c.StudentManagerSystemApplication - Starting StudentManagerSystemApplication using Java 17.0.13 with PID 11964 (E:\JavaProject\StudentManagerSystem\target\classes started by Administrator in E:\JavaProject\StudentManagerSystem)
+2025-10-14 22:26:17.737 [main] INFO  c.k.c.StudentManagerSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-14 22:26:18.718 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-10-14 22:26:18.727 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2025-10-14 22:26:18.730 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-14 22:26:18.731 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-10-14 22:26:18.932 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-10-14 22:26:18.937 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-14 22:26:18.938 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1166 ms
+2025-10-14 22:26:19.033 [main] DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+2025-10-14 22:26:19.265 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-10-14 22:26:19.345 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2025-10-14 22:26:19.356 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-10-14 22:26:19.362 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-10-14 22:26:19.494 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-10-14 22:26:19.523 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2025-10-14 22:26:19.554 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2025-10-14 22:26:19.566 [main] INFO  c.k.c.StudentManagerSystemApplication - Started StudentManagerSystemApplication in 2.081 seconds (process running for 2.467)
+2025-10-14 22:26:25.919 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-14 22:26:25.919 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-14 22:26:25.919 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-10-14 22:26:25.920 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected SessionLocaleResolver
+2025-10-14 22:26:25.920 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-10-14 22:26:25.921 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6bb2dc26
+2025-10-14 22:26:25.921 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@4740ab58
+2025-10-14 22:26:25.921 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-10-14 22:26:25.921 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-10-14 22:26:25.935 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/mapper/test", parameters={}
+2025-10-14 22:26:25.943 [http-nio-8888-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.koneko.consulting.conctroller.MapperController#test()
+2025-10-14 22:26:25.961 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-14 22:26:26.098 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1dd928e3
+2025-10-14 22:26:26.101 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-14 22:26:26.254 [http-nio-8888-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-10-14 22:26:26.254 [http-nio-8888-exec-1] DEBUG o.s.w.s.view.InternalResourceView - View name 'main', model {}
+2025-10-14 22:26:26.264 [http-nio-8888-exec-1] DEBUG o.s.w.s.view.InternalResourceView - Forwarding to [/WEB-INF/views/main.jsp]
+2025-10-14 22:26:27.240 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-10-14 22:26:27.357 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/mapper/easyui/themes/default/easyui.css", parameters={}
+2025-10-14 22:26:27.370 [http-nio-8888-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/mapper/easyui/themes/icon.css", parameters={}
+2025-10-14 22:26:27.371 [http-nio-8888-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/mapper/h-ui/css/H-ui.login.css", parameters={}
+2025-10-14 22:26:27.371 [http-nio-8888-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/mapper/h-ui/css/H-ui.min.css", parameters={}
+2025-10-14 22:26:27.376 [http-nio-8888-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/mapper/h-ui/lib/Hui-iconfont/1.0.1/iconfont.css", parameters={}
+2025-10-14 22:26:27.376 [http-nio-8888-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/mapper/h-ui/lib/icheck/icheck.css", parameters={}
+2025-10-14 22:26:27.378 [http-nio-8888-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-14 22:26:27.379 [http-nio-8888-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-14 22:26:27.379 [http-nio-8888-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-14 22:26:27.379 [http-nio-8888-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-14 22:26:27.379 [http-nio-8888-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-14 22:26:27.379 [http-nio-8888-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-14 22:26:27.387 [http-nio-8888-exec-4] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-10-14 22:26:27.387 [http-nio-8888-exec-10] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-10-14 22:26:27.387 [http-nio-8888-exec-5] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-10-14 22:26:27.387 [http-nio-8888-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-10-14 22:26:27.387 [http-nio-8888-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-10-14 22:26:27.387 [http-nio-8888-exec-6] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-10-14 22:26:27.387 [http-nio-8888-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-10-14 22:26:27.388 [http-nio-8888-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-10-14 22:26:27.388 [http-nio-8888-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-10-14 22:26:27.388 [http-nio-8888-exec-8] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-10-14 22:26:27.391 [http-nio-8888-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-10-14 22:26:27.392 [http-nio-8888-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-10-14 22:26:27.390 [http-nio-8888-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-10-14 22:26:27.390 [http-nio-8888-exec-2] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-10-14 22:26:27.389 [http-nio-8888-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-10-14 22:26:27.394 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-10-14 22:26:27.392 [http-nio-8888-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-14 22:26:27.392 [http-nio-8888-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-14 22:26:27.393 [http-nio-8888-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-14 22:26:27.394 [http-nio-8888-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-14 22:26:27.394 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-10-14 22:26:27.395 [http-nio-8888-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-10-14 22:26:27.395 [http-nio-8888-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-14 22:26:27.396 [http-nio-8888-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-14 22:26:27.490 [http-nio-8888-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.1', given [text/css, */*;q=0.1] and supported [application/json, application/*+json]
+2025-10-14 22:26:27.490 [http-nio-8888-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.1', given [text/css, */*;q=0.1] and supported [application/json, application/*+json]
+2025-10-14 22:26:27.490 [http-nio-8888-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.1', given [text/css, */*;q=0.1] and supported [application/json, application/*+json]
+2025-10-14 22:26:27.490 [http-nio-8888-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.1', given [text/css, */*;q=0.1] and supported [application/json, application/*+json]
+2025-10-14 22:26:27.490 [http-nio-8888-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.1', given [text/css, */*;q=0.1] and supported [application/json, application/*+json]
+2025-10-14 22:26:27.490 [http-nio-8888-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.1', given [text/css, */*;q=0.1] and supported [application/json, application/*+json]
+2025-10-14 22:26:27.494 [http-nio-8888-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Tue Oct 14 22:26:27 JST 2025, status=404, error=Not Found, path=/mapper/h-ui/lib/icheck/i (truncated)...]
+2025-10-14 22:26:27.494 [http-nio-8888-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Tue Oct 14 22:26:27 JST 2025, status=404, error=Not Found, path=/mapper/easyui/themes/ico (truncated)...]
+2025-10-14 22:26:27.494 [http-nio-8888-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Tue Oct 14 22:26:27 JST 2025, status=404, error=Not Found, path=/mapper/easyui/themes/def (truncated)...]
+2025-10-14 22:26:27.494 [http-nio-8888-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Tue Oct 14 22:26:27 JST 2025, status=404, error=Not Found, path=/mapper/h-ui/css/H-ui.min (truncated)...]
+2025-10-14 22:26:27.494 [http-nio-8888-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Tue Oct 14 22:26:27 JST 2025, status=404, error=Not Found, path=/mapper/h-ui/lib/Hui-icon (truncated)...]
+2025-10-14 22:26:27.494 [http-nio-8888-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Tue Oct 14 22:26:27 JST 2025, status=404, error=Not Found, path=/mapper/h-ui/css/H-ui.log (truncated)...]
+2025-10-14 22:26:27.528 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-10-14 22:26:27.528 [http-nio-8888-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-10-14 22:26:27.528 [http-nio-8888-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-10-14 22:26:27.528 [http-nio-8888-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-10-14 22:26:27.528 [http-nio-8888-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-10-14 22:26:27.528 [http-nio-8888-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-10-14 22:26:27.531 [http-nio-8888-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/mapper/easyui/jquery.min.js", parameters={}
+2025-10-14 22:26:27.531 [http-nio-8888-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/mapper/easyui/jquery.easyui.min.js", parameters={}
+2025-10-14 22:26:27.531 [http-nio-8888-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/mapper/h-ui/js/H-ui.js", parameters={}
+2025-10-14 22:26:27.531 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/mapper/h-ui/lib/icheck/jquery.icheck.min.js", parameters={}
+2025-10-14 22:26:27.531 [http-nio-8888-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-14 22:26:27.531 [http-nio-8888-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-14 22:26:27.531 [http-nio-8888-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-14 22:26:27.532 [http-nio-8888-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-10-14 22:26:27.533 [http-nio-8888-exec-9] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-10-14 22:26:27.534 [http-nio-8888-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-10-14 22:26:27.534 [http-nio-8888-exec-3] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-10-14 22:26:27.534 [http-nio-8888-exec-7] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-10-14 22:26:27.534 [http-nio-8888-exec-1] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-10-14 22:26:27.534 [http-nio-8888-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-10-14 22:26:27.534 [http-nio-8888-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-10-14 22:26:27.534 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-10-14 22:26:27.534 [http-nio-8888-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-10-14 22:26:27.534 [http-nio-8888-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-10-14 22:26:27.534 [http-nio-8888-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-10-14 22:26:27.534 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-10-14 22:26:27.535 [http-nio-8888-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-14 22:26:27.535 [http-nio-8888-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-14 22:26:27.535 [http-nio-8888-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-14 22:26:27.535 [http-nio-8888-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-10-14 22:26:27.535 [http-nio-8888-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-14 22:26:27.535 [http-nio-8888-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-14 22:26:27.535 [http-nio-8888-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-14 22:26:27.535 [http-nio-8888-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Tue Oct 14 22:26:27 JST 2025, status=404, error=Not Found, path=/mapper/easyui/jquery.eas (truncated)...]
+2025-10-14 22:26:27.535 [http-nio-8888-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-10-14 22:26:27.535 [http-nio-8888-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Tue Oct 14 22:26:27 JST 2025, status=404, error=Not Found, path=/mapper/easyui/jquery.min (truncated)...]
+2025-10-14 22:26:27.536 [http-nio-8888-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Tue Oct 14 22:26:27 JST 2025, status=404, error=Not Found, path=/mapper/h-ui/js/H-ui.js}]
+2025-10-14 22:26:27.536 [http-nio-8888-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Tue Oct 14 22:26:27 JST 2025, status=404, error=Not Found, path=/mapper/h-ui/lib/icheck/j (truncated)...]
+2025-10-14 22:26:27.536 [http-nio-8888-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-10-14 22:26:27.536 [http-nio-8888-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-10-14 22:26:27.536 [http-nio-8888-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-10-14 22:26:27.536 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
