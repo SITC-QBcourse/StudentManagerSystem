@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.koneko.consulting.common.VCodeGenerator;
-import com.koneko.consulting.pojo.User;
+import com.koneko.consulting.pojo.MITUser;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -29,7 +29,7 @@ public class LoginController {
     @GetMapping
     public String hello(Model model, Locale locale) {
         rb = ResourceBundle.getBundle("i18n/i18n", locale);
-        User user = new User();
+        MITUser user = new MITUser();
         // user.setUserName("laoyang");
         // user.setPassword("123456");
         model.addAttribute("user", user);
@@ -53,7 +53,7 @@ public class LoginController {
     }
 
     @PostMapping("checkLogin")
-    public String checkLogin(@ModelAttribute User user, Model model, HttpServletRequest request) {
+    public String checkLogin(@ModelAttribute MITUser user, Model model, HttpServletRequest request) {
         log.info("用户信息：{}", user);
         String vcode = (String) request.getSession().getAttribute("vcode");
         if (vcode.equalsIgnoreCase(user.getLoginCode())) {
