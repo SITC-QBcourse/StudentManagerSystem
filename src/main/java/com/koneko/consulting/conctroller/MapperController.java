@@ -16,10 +16,10 @@ public class MapperController {
     @RequestMapping("/test")
     public String test() {
         MITUser user = new MITUser();
-        user.setUserId("tmc24072");
-        user.setUserName("wang shuqing");
-        user.setUserPassword("Qinghai1314");
-        user.setUserEmail("tmc24072@shirahagi.ac.jp");
+        user.setUserId("richyyang1314");
+        user.setUserName("杨鸣海");
+        user.setUserPassword("Yanyang1314");
+        user.setUserEmail("richyyang1314@shirahagi.ac.jp");
         user.setUserPrivilege(1);
         System.out.println("Hello World!");
         int result = mapper.insertUser(user);

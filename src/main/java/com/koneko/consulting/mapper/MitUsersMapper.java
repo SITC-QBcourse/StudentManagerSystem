@@ -7,4 +7,5 @@ import com.koneko.consulting.pojo.MITUser;
 @Mapper
 public interface MitUsersMapper {
     public int insertUser(MITUser user);
+    public MITUser selectUserByEmail(String email);
 }

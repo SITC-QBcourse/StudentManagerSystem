@@ -16,4 +16,10 @@
     INSERT INTO mit_user (user_id,user_name, user_email, user_password, user_privilege)
     VALUES (#{userId}, #{userName}, #{userEmail}, #{userPassword}, #{userPrivilege})
   </insert>
+
+  <select id="selectUserByEmail" parameterType="string" resultMap="mitUsersMap">
+    select user_id, user_name, user_email, user_password, user_privilege
+    from mit_user
+    where user_email = #{userEmail}
+  </select>
 </mapper>

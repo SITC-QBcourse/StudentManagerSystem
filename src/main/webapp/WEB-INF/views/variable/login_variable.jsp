@@ -9,8 +9,8 @@
             <title>Document</title>
         </head>
         <body>
-            <c:set var="username" scope="request">
-                <spring:message code='login.username' />
+            <c:set var="useremail" scope="request">
+                <spring:message code='login.useremail' />
             </c:set>
             <c:set var="password" scope="request">
                 <spring:message code='login.password' />

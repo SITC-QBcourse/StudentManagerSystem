@@ -22,13 +22,51 @@
 					<script type="text/javascript" src="h-ui/lib/icheck/jquery.icheck.min.js"></script>
 
 					<script>
-						$(function(){
+						$(function () {
 							//点击切换图片
-							$('#vcodeImg').click(function(){
-								this.src='${pageContext.request.contextPath}/getGeneratorCoode?d='+Math.random();
+							$('#vcodeImg').click(function () {
+								this.src = '${pageContext.request.contextPath}/getGeneratorCoode?d=' + Math.random();
 							})
 						});
+
+						$(document).ready(function () {
+							$('input[type="submit"]').click(function (event) {
+								event.preventDefault();//阻止表单默认提交
+								$.ajax({
+									type: 'post',
+									url: '${pageContext.request.contextPath}/checkLogin',
+									data: $('.form').serialize(),
+									dataType: 'text',
+									async: false,
+									success: function (msg) {
+										console.log(msg);
+										
+										if ('vcodeError' == msg) {
+											$.messager.alert('错误', '验证码错误！', 'error');
+											$('#vcodeImg').click();//切换验证码
+											$('.vcode').val('');//清空验证码输入框
+										} else if ('userError' == msg) {
+											$.messager.alert('错误', '用户名或密码错误！', 'error');
+											$('#vcodeImg').click();//切换验证码
+											$('.vcode').val('');//清空验证码输入框
+											$('.userPassword').val('');//清空密码输入框
+											$('.userName').val('');//清空用户名输入框
+										} else if ('success' == msg) {
+											window.location.href = '${pageContext.request.contextPath}/main';
+										}
+									},
+									error:function(msg){
+										$.messager.alert('错误', '系统异常，请稍后再试！', 'error');
+										$('#vcodeImg').click();//切换验证码
+										$('.vcode').val('');//清空验证码输入框
+										$('.userPassword').val('');//清空密码输入框
+										$('.userName').val('');//清空用户名输入框
+									}
+								});
+							});
+						});
 					</script>
+
 					<body>
 						<div class="header" style="padding:0">
 							<h2
@@ -36,38 +74,30 @@
 								<spring:message code="login.title" />
 							</h2>
 						</div>
-						
+
 						<div class="loginWraper">
 							<div id="loginform" class="loginBox">
 								<form:form action="${pageContext.request.contextPath}/checkLogin" method="post"
 									modelAttribute="user" class="form form-horizontal">
-									<div class="mt-20 skin-minimal">
-										<c:if test="${not empty msg }">
-											<label class="form-label col-3"><i class="Hui-iconfont">&#xe6dd;</i></label>
-											<div class="formControls col-8">
-												<span style="color: red;">${msg}</span>
-											</div>
-										</c:if>
-									</div>
 									<div class="row cl">
 										<label class="form-label col-3"><i class="Hui-iconfont">&#xe60d;</i></label>
 										<div class="formControls col-8">
-											<form:input path="userName" class="input-text size-L"
-												placeholder="${username}" value=""/>
+											<form:input path="userEmail" class="input-text size-L userName"
+												placeholder="${useremail}" value="" />
 										</div>
 									</div>
 									<div class="row cl">
 										<label class="form-label col-3"><i class="Hui-iconfont">&#xe60e;</i></label>
 										<div class="formControls col-8">
 											<form:password path="userPassword" value=""
-												class="input-text size-L" placeholder="${password}" />
+												class="input-text size-L userPassword" placeholder="${password}" />
 										</div>
 									</div>
 									<div class="row cl">
 										<label class="form-label col-3"><i class="Hui-iconfont">&#xe6ad;</i></label>
 										<div class="formControls col-8">
-											<form:input class="input-text size-L" path="loginCode" style="width:240px;"
-												placeholder="${vcode}" value=""/>
+											<form:input class="input-text size-L vcode" path="loginCode"
+												style="width:240px;" placeholder="${vcode}" value="" />
 											<img title="${vcodeChange}" id="vcodeImg"
 												src="${pageContext.request.contextPath}/getGeneratorCoode" /><br>
 										</div>
