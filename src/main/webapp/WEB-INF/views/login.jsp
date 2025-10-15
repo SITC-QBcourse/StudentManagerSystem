@@ -59,7 +59,7 @@
 									<div class="row cl">
 										<label class="form-label col-3"><i class="Hui-iconfont">&#xe60e;</i></label>
 										<div class="formControls col-8">
-											<form:password path="password" value=""
+											<form:password path="userPassword" value=""
 												class="input-text size-L" placeholder="${password}" />
 										</div>
 									</div>
