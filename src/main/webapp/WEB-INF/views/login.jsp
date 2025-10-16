@@ -31,6 +31,8 @@
 
 						$(document).ready(function () {
 							$('input[type="submit"]').click(function (event) {
+								console.log(event);
+								
 								event.preventDefault();//阻止表单默认提交
 								$.ajax({
 									type: 'post',
@@ -52,7 +54,7 @@
 											$('.userPassword').val('');//清空密码输入框
 											$('.userName').val('');//清空用户名输入框
 										} else if ('success' == msg) {
-											window.location.href = '${pageContext.request.contextPath}/main';
+											window.location.href = event.target.form.action;
 										}
 									},
 									error:function(msg){
@@ -77,7 +79,7 @@
 
 						<div class="loginWraper">
 							<div id="loginform" class="loginBox">
-								<form:form action="${pageContext.request.contextPath}/checkLogin" method="post"
+								<form:form action="${pageContext.request.contextPath}/main" method="post"
 									modelAttribute="user" class="form form-horizontal">
 									<div class="row cl">
 										<label class="form-label col-3"><i class="Hui-iconfont">&#xe60d;</i></label>
@@ -107,7 +109,7 @@
 											<input type="submit" style="width:150px;"
 												class="btn btn-success radius size-L" value="${btnSubmit}">
 											<input type="reset" style="width:150px; margin-left: 60px;"
-												class="btn btn-denger radius size-L" value="${btnReset}">
+												class="btn btn-danger radius size-L" value="${btnReset}">
 										</div>
 									</div>
 								</form:form>

@@ -12,7 +12,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -61,12 +60,6 @@ public class LoginController {
     @GetMapping("main")
     public String toMain() {
         return "main";
-    }
-
-    public String postMethodName(@RequestBody String entity) {
-        // TODO: process POST request
-
-        return entity;
     }
 
     @PostMapping(value = "checkLogin", produces = "text/plain;charset=UTF-8")
