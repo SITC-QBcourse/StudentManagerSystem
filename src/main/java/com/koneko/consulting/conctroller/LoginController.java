@@ -2,7 +2,6 @@ package com.koneko.consulting.conctroller;
 
 import java.io.IOException;
 import java.util.Locale;
-import java.util.ResourceBundle;
 
 import javax.imageio.ImageIO;
 
@@ -12,7 +11,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -28,13 +26,11 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @RequestMapping("/")
 public class LoginController {
-    private ResourceBundle rb;
     @Autowired
     private MitUsersMapper mapper;
 
     @GetMapping
     public String hello(Model model, Locale locale) {
-        rb = ResourceBundle.getBundle("i18n/i18n", locale);
         MITUser user = new MITUser();
         // user.setUserName("laoyang");
         // user.setPassword("123456");
@@ -54,6 +50,7 @@ public class LoginController {
         VCodeGenerator vCodeGenerator = new VCodeGenerator(5);
         String vcode = vCodeGenerator.generatorVCode();
         request.getSession().setAttribute("vcode", vcode);
+        log.info("此次生成的验证码为：{}，已保存至session中。", vcode);
         java.awt.image.BufferedImage bufferedImage = vCodeGenerator.generatorVCodeImage(vcode, true);
         ImageIO.write(bufferedImage, "gif", response.getOutputStream());
     }
@@ -63,16 +60,10 @@ public class LoginController {
         return "main";
     }
 
-    public String postMethodName(@RequestBody String entity) {
-        // TODO: process POST request
-
-        return entity;
-    }
-
-    @PostMapping(value = "checkLogin", produces = "text/plain;charset=UTF-8")
+    @PostMapping("checkLogin")
     @ResponseBody
-    public String checkLogin(@ModelAttribute MITUser user, Model model, HttpServletRequest request,
-            HttpServletResponse response) throws IOException {
+    public String checkLogin(@ModelAttribute MITUser user, Model model,
+            HttpServletRequest request, HttpServletResponse response) throws IOException {
         String sessionVcode = (String) request.getSession().getAttribute("vcode");
         String loginCode = user.getLoginCode();
         String msg = "";
@@ -82,11 +73,11 @@ public class LoginController {
             String userEmail = user.getUserEmail();
             String userPassword = user.getUserPassword();
             MITUser dbUser = mapper.selectUserByEmail(userEmail);
-            log.info(dbUser + "");
             if (null == dbUser || !dbUser.getUserPassword().equals(userPassword)) {
                 msg = "userError";
             } else {
                 request.getSession().setAttribute("loginUser", dbUser);
+                log.info("用户信息：{}", dbUser);
                 msg = "success";
             }
         }

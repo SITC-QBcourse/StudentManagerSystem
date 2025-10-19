@@ -11,9 +11,9 @@
     
     <!-- 文件输出 -->
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>logs/springmvc-demo.log</file>
+        <file>/logs/SMS.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>logs/springmvc-demo.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <fileNamePattern>/logs/SMS.%d{yyyy-MM-dd}.log</fileNamePattern>
             <maxHistory>30</maxHistory>
         </rollingPolicy>
         <encoder>
@@ -39,4 +39,3 @@
     </root>
     
 </configuration>
-
