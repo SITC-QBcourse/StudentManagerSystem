@@ -11,7 +11,6 @@
         <script type="text/javascript" src="${pageContext.request.contextPath}/h-ui.admin/static/h-ui/js/H-ui.js"></script>
         <script type="text/javascript" src="${pageContext.request.contextPath}/h-ui.admin/static/h-ui.admin/js/H-ui.admin.js"></script>
         <script type="text/javascript" src="${pageContext.request.contextPath}/easyui/jquery.easyui.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}h-ui/src/scss/3.07-Hui-iconfont.scss"  />
         <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/easyui/themes/black/easyui.css">
         <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/easyui/themes/icon.css">
         <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/h-ui.admin/static/h-ui.admin/css/H-ui.login.css">

@@ -60,11 +60,7 @@ public class LoginController {
         return "main";
     }
 
-<<<<<<< HEAD
-    @PostMapping("checkLogin")
-=======
     @PostMapping(value = "checkLogin", produces = "text/plain;charset=UTF-8")
->>>>>>> b3498c8ce7e34789879286b1112b2a9134a5cf0d
     @ResponseBody
     public String checkLogin(@ModelAttribute MITUser user, Model model,
             HttpServletRequest request, HttpServletResponse response) throws IOException {
