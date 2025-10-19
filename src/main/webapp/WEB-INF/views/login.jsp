@@ -55,11 +55,47 @@
 										error: function (msg) {
 											console.log("error" + msg);
 
+<<<<<<< HEAD
 											$.messager.alert(i18n.title, i18n.server_content, 'error');
+=======
+					<script>
+						$(function () {
+							//点击切换图片
+							$('#vcodeImg').click(function () {
+								this.src = '${pageContext.request.contextPath}/getGeneratorCoode?d=' + Math.random();
+							})
+						});
+
+						$(document).ready(function () {
+							$('input[type="submit"]').click(function (event) {
+								console.log(event);
+								
+								event.preventDefault();//阻止表单默认提交
+								$.ajax({
+									type: 'post',
+									url: '${pageContext.request.contextPath}/checkLogin',
+									data: $('.form').serialize(),
+									dataType: 'text',
+									async: false,
+									success: function (msg) {
+										console.log(msg);
+										
+										if ('vcodeError' == msg) {
+											$.messager.alert('错误', '验证码错误！', 'error');
+											$('#vcodeImg').click();//切换验证码
+											$('.vcode').val('');//清空验证码输入框
+										} else if ('userError' == msg) {
+											$.messager.alert('错误', '用户名或密码错误！', 'error');
+>>>>>>> b3498c8ce7e34789879286b1112b2a9134a5cf0d
 											$('#vcodeImg').click();//切换验证码
 											$('.vcode').val('');//清空验证码输入框
 											$('.userPassword').val('');//清空密码输入框
 											$('.userName').val('');//清空用户名输入框
+<<<<<<< HEAD
+=======
+										} else if ('success' == msg) {
+											window.location.href = event.target.form.action;
+>>>>>>> b3498c8ce7e34789879286b1112b2a9134a5cf0d
 										}
 									});
 								});
@@ -68,11 +104,50 @@
 
 						<body>
 
+<<<<<<< HEAD
 							<div class="header" style="padding:0">
 								<h2
 									style="color:white;width:400px;height:60px;line-height: 60px;margin-left: 30px;padding: 0;">
 									<spring:message code="project.title" />
 								</h2>
+=======
+						<div class="loginWraper">
+							<div id="loginform" class="loginBox">
+								<form:form action="${pageContext.request.contextPath}/main" method="post"
+									modelAttribute="user" class="form form-horizontal">
+									<div class="row cl">
+										<label class="form-label col-3"><i class="Hui-iconfont">&#xe60d;</i></label>
+										<div class="formControls col-8">
+											<form:input path="userEmail" class="input-text size-L userName"
+												placeholder="${useremail}" value="" />
+										</div>
+									</div>
+									<div class="row cl">
+										<label class="form-label col-3"><i class="Hui-iconfont">&#xe60e;</i></label>
+										<div class="formControls col-8">
+											<form:password path="userPassword" value=""
+												class="input-text size-L userPassword" placeholder="${password}" />
+										</div>
+									</div>
+									<div class="row cl">
+										<label class="form-label col-3"><i class="Hui-iconfont">&#xe6ad;</i></label>
+										<div class="formControls col-8">
+											<form:input class="input-text size-L vcode" path="loginCode"
+												style="width:240px;" placeholder="${vcode}" value="" />
+											<img title="${vcodeChange}" id="vcodeImg"
+												src="${pageContext.request.contextPath}/getGeneratorCoode" /><br>
+										</div>
+									</div>
+									<div class="row cl">
+										<div class="formControls col-8 col-offset-3">
+											<input type="submit" style="width:150px;"
+												class="btn btn-success radius size-L" value="${btnSubmit}">
+											<input type="reset" style="width:150px; margin-left: 60px;"
+												class="btn btn-danger radius size-L" value="${btnReset}">
+										</div>
+									</div>
+								</form:form>
+>>>>>>> b3498c8ce7e34789879286b1112b2a9134a5cf0d
 							</div>
 
 							<div class="loginWraper">

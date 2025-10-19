@@ -10,6 +10,7 @@ import com.koneko.consulting.pojo.MITUser;
 @Controller
 @RequestMapping("/mapper")
 public class MapperController {
+    
     @Autowired
     private MitUsersMapper mapper;
 
