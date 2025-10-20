@@ -11,7 +11,7 @@
 							<title>
 								<spring:message code="project.title" />
 							</title>
-							<link rel="icon" type="image/x-icon" href="<c:url value='/favicon_v2.ico' />">
+							<link rel="Shortcut Icon" type="image/x-icon" href="<c:url value='/favicon_v2.ico' />">
 						</head>
 						<script>
 							const i18n = {

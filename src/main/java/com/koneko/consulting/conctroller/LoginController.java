@@ -29,12 +29,19 @@ public class LoginController {
     @Autowired
     private MitUsersMapper mapper;
 
+    /**
+     * 处理根路径GET请求，返回登录页面视图
+     * 
+     * @param model  Spring MVC模型对象（用于传递用户对象到视图层）
+     * @param locale 本地化对象（当前未使用，保留用于后续国际化支持）
+     * @return login 视图名称
+     */
     @GetMapping
     public String hello(Model model, Locale locale) {
-        MITUser user = new MITUser();
-        // user.setUserName("laoyang");
-        // user.setPassword("123456");
-        model.addAttribute("user", user);
+        // 将用户对象添加到模型，供Thymeleaf模板使用
+        model.addAttribute("user", new MITUser());
+
+        // 返回登录页面视图名称
         return "login";
     }
 
@@ -82,5 +89,12 @@ public class LoginController {
             }
         }
         return msg;
+    }
+
+    @GetMapping("logout")
+    public String logout(Model model, HttpServletRequest request) {
+        request.getSession().removeAttribute("loginUser");
+        model.addAttribute("user", new MITUser());
+        return "login";
     }
 }
