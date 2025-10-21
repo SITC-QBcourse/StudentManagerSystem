@@ -23,12 +23,24 @@
 							$(function () {
 								//点击切换图片
 								$('#vcodeImg').click(function () {
-									this.src = '${pageContext.request.contextPath}/getGeneratorCoode?d=' + Math.random();
+									$(this).attr('src','${pageContext.request.contextPath}/getGeneratorCoode?d=' + Math.random());
 								})
 							});
 							$(document).ready(function () {
 								$('input[type="submit"]').click(function (event) {
 									event.preventDefault();//阻止表单默认提交
+									if('' === $('.userEmail').val().trim()){
+										$.messager.alert(i18n.title, i18n.user_content, 'error');
+										return;
+									}
+									if('' === $('.vcode').val().trim()){
+										$.messager.alert(i18n.title, i18n.vcode_content, 'error');
+										return;
+									}
+									if('' === $('.userPassword').val().trim()){
+										$.messager.alert(i18n.title, i18n.user_content, 'error');
+										return;
+									}
 									$.ajax({
 										type: 'post',
 										url: '${pageContext.request.contextPath}/checkLogin',
@@ -36,25 +48,21 @@
 										dataType: 'text',
 										async: false,
 										success: function (msg) {
-											console.log("success" + msg);
-
-											if ('vcodeError' == msg) {
+											if ('vcodeError' === msg) {
 												$.messager.alert(i18n.title, i18n.vcode_content, 'error');
 												$('#vcodeImg').click();//切换验证码
 												$('.vcode').val('');//清空验证码输入框
-											} else if ('userError' == msg) {
+											} else if ('userError' === msg) {
 												$.messager.alert(i18n.title, i18n.user_content, 'error');
 												$('#vcodeImg').click();//切换验证码
 												$('.vcode').val('');//清空验证码输入框
 												$('.userPassword').val('');//清空密码输入框
 												$('.userName').val('');//清空用户名输入框
-											} else if ('success' == msg) {
+											} else if ('success' === msg) {
 												window.location.href = '${pageContext.request.contextPath}/main';
 											}
 										},
 										error: function (msg) {
-											console.log("error" + msg);
-
 											$.messager.alert(i18n.title, i18n.server_content, 'error');
 											$('#vcodeImg').click();//切换验证码
 											$('.vcode').val('');//清空验证码输入框
@@ -82,7 +90,7 @@
 										<div class="row cl">
 											<label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60d;</i></label>
 											<div class="formControls col-xs-8">
-												<form:input path="userEmail" class="input-text radius size-L userName"
+												<form:input path="userEmail" class="input-text radius size-L userEmail"
 													placeholder="${useremail}" value="" />
 											</div>
 										</div>

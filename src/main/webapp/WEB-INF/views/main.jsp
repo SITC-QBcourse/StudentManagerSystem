@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 	<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 		<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+		<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 			<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 				<%@ include file="common/common.jsp" %>
 					<!DOCTYPE html>
@@ -12,8 +13,8 @@
 							<spring:message code="project.title" />
 						</title>
 					</head>
-
 					<body>
+						<c:set var="privilegeKey" value="userPrivilege.${loginUser.userPrivilege}" />
 						<header class="navbar-wrapper">
 							<div class="navbar navbar-fixed-top">
 								<div class="container-fluid cl">
@@ -27,26 +28,9 @@
 									<a aria-hidden="false" href="javascript:;" class="nav-toggle visible-xs"><i
 											class="hui-iconfont">&#xe667;</i></a>
 									<nav id="Hui-userbar" class="nav navbar-nav navbar-userbar hidden-xs">
-										<ul class="cl">
+										<ul class="cl" id="user_privilege_name">
 											<li>
-												<c:if test="${loginUser.userPrivilege == 0}">
-													<spring:message code="userPrivilege.0" />
-												</c:if>
-											</li>
-											<li>
-												<c:if test="${loginUser.userPrivilege == 1}">
-													<spring:message code="userPrivilege.1" />
-												</c:if>
-											</li>
-											<li>
-												<c:if test="${loginUser.userPrivilege == 2}">
-													<spring:message code="userPrivilege.2" />
-												</c:if>
-											</li>
-											<li>
-												<c:if test="${loginUser.userPrivilege == 3}">
-													<spring:message code="userPrivilege.3" />
-												</c:if>
+												<spring:message code="${privilegeKey}" />
 											</li>
 											<li class="dropDown dropDown_hover">
 												<a href="javascript:;" class="dropDown_A">
